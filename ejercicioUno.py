@@ -41,13 +41,21 @@ listaTres = [3.14, 2, True]
 
 listaCuatro= [3.14, 2,[1,[(1+2j, (0.5 + 0.5j), 3j)], 3]]
 
+diccionario = {"Asia": ["China", "Sri Lanka"], "America": ["Belice", "Surinam"], "Europa": ["Luxemburgo", "Liechstein"]}
+
+diccionario.keys()
+
+diccionario["America"][1] = "Haiti"
 
 
+print(diccionario.keys())
+print(diccionario.values())
+print(diccionario["America"])
 
 # tuplaDos = 
 
 # print(listaTres[-1])
-print(listaCuatro)
+# print(listaCuatro)
 
 # print(tupla)
 
