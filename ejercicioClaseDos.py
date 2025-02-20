@@ -33,55 +33,55 @@ personas['Apellidos'] = personas.pop("Apellido")
 personas['Genero'] = personas.pop("Sexo")
 
 # print(personas)
-# print(personas)
+print(personas)
 
 
 
-### CONTROLES DE FLUJO ### 
+## CONTROLES DE FLUJO ### 
 
-# n = float(input("Ingrese un numero: "))
+n = float(input("Ingrese un numero: "))
           
-# if n >= 5:
-#     print(f'{n} "Es mayor que 5"')
-# # print(" N es mayor que 5")
+if n >= 5:
+    print(f'{n} "Es mayor que 5"')
+print(" N es mayor que 5")
 
 
-# n = float(input("Ingrese un numero: "))
+n = float(input("Ingrese un numero: "))
           
-# if n >= 5:
-#     print(f'{n} "\u2265 5"')
+if n >= 5:
+    print(f'{n} "\u2265 5"')
     
-# else:
-#     print(f'{n} "< 5"')
+else:
+    print(f'{n} "< 5"')
 
-# temperatura = float(input("Ingrese la temperatura del paciente: "))
+temperatura = float(input("Ingrese la temperatura del paciente: "))
 
-# if temperatura >= 41:
-#     print(f'{temperatura} "Tiene fiebre muy alta')
+if temperatura >= 41:
+    print(f'{temperatura} "Tiene fiebre muy alta')
     
-# elif temperatura < 41 and temperatura >= 39.5:
-#      print(f'{temperatura} "Tiene fiebre alta')
+elif temperatura < 41 and temperatura >= 39.5:
+     print(f'{temperatura} "Tiene fiebre alta')
     
-# elif temperatura < 39.5 and temperatura >= 37.5:
-#      print(f'{temperatura} "Tiene fiebre')
+elif temperatura < 39.5 and temperatura >= 37.5:
+     print(f'{temperatura} "Tiene fiebre')
 
-# elif temperatura <= 37.5 and temperatura >= 36:
-#      print(f'{temperatura} "Tiene temperatura normal')
+elif temperatura <= 37.5 and temperatura >= 36:
+     print(f'{temperatura} "Tiene temperatura normal')
      
-# else:
-#      print(f'{temperatura} "Tiene hipotermia')
+else:
+     print(f'{temperatura} "Tiene hipotermia')
      
      
-### BUCLES ### 
+## BUCLES ### 
 
-# for i in range(1,11):
-#     print(i)
+for i in range(1,11):
+    print(i)
 
-# i = 0
+i = 0
 
-# while i < 10:
-#     i += 1
-#     print(i) 
+while i < 10:
+    i += 1
+    print(i) 
     
     
     
@@ -99,7 +99,7 @@ diccionario['Oceania'] = ["Australia", "New Zealand", "Papua Nueva Guinea"]
 continentes = list(diccionario.keys())
 
 
-# print(continentes)
+print(continentes)
 
 
 for continente in continentes:
@@ -107,3 +107,14 @@ for continente in continentes:
     for pais in diccionario[continente]:
         print(f'    {pais}')
     
+    
+numContinentes = len(continentes)
+
+cont = 0
+while cont < numContinentes:
+    print(f'Algunos paises de {continentes[cont]} son: ')
+    contPais = 0
+    while contPais < len(diccionario[continentes[cont]]):
+        print(diccionario[continentes[cont]][contPais])
+        contPais += 1
+    cont +=  1
