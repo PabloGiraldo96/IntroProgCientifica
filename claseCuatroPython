@@ -1,0 +1,14 @@
+class Punto:
+
+    def __init__ (self, valor1, valor2):
+        self.x = valor1
+        self.y = valor2
+    
+
+punto1 = Punto(1, 1)
+print(f'La coordenada del primer punto es {punto1.x, punto1.y}')
+punto2 = Punto(4, 3)
+print(f'La coordenada del segundo punto es {punto2.x, punto2.y}')
+
+
+
