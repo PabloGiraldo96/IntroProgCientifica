@@ -58,4 +58,4 @@ print(dg.evaldf(2))
 
 # CREE UNA SUPERCLASE DERIVADA QUE VA A TENER DOS SUB CLASES, UNA CON LA FORMULA DE LA DERIVADA TRADICIONAL Y OTRA CON LA FORMULA CENTRAL DE LA DERIVADAD DE PRIMER ORDEN
 
-#  $\frac{df(x)}{dx} =\lim{\Delta x\ rightarrow 0} = \frac{f(x + \Delta x) - f(x - \Delta x)}{2 \Delta x} $
+#  $\frac{df(x)}{dx} =\lim{\Delta x\ rightarrow 0} \frac{f(x + \Delta x) - f(x - \Delta x)}{2 \Delta x} $
