@@ -1,0 +1,57 @@
+## EJERCICIO 
+## Cree una clase para derivacion numerica de una funcion cualquiera 
+## Usar la defincion por limite 
+
+# $\frac{df(x){dx} = \lim_{\Delta x \rightarrow 0}\frac{f(x + \Delta x) -f(x)}}{\Delta x}$ 
+
+
+# class Derivada:
+#     """Clase derivada 
+#     Atributos: f = funcion 
+#             deltax (flotante) = aproximacion a 0
+#             evaldf = recibe un flotante para evaluar la derivada de f en dicho punto
+#     """ 
+#     def __init__(self, func, deltax = 1e-6):
+#         self.deltax = deltax
+#         self.f = func
+        
+        
+#     def evaldf(self, x ):
+#         return (self.f(x + self.deltax) - (self.f(x))) / self.deltax
+
+# myfunc = lambda x: 4*x**2 +3*x +5
+    
+# dydx = Derivada(myfunc)
+
+# print(f'La derivada de 4x^2+3x+5  en x = 0.5, es {dydx.evaldf(0.5)}')
+
+
+
+# class Derivada2:
+#     def __init__(self, func, deltax = 1e-12):
+#         self.deltax = deltax
+#         self.f = func
+        
+        
+#     def __call__(self, x ):
+#         return (self.f(x + self.deltax) - (self.f(x))) / self.deltax
+
+
+# print(f'La derivada de 4x^2+3x+5  en x = 0.5, es {}')
+
+
+
+
+class Derivada:
+    def __init__(self, func):
+        self.deltax = 1e-9
+        self.f = func
+        
+    def evaldf(self, x ):
+        return (self.f(x + self.deltax) - (self.f(x))) / self.deltax
+
+g = lambda x: 2*x**2+5*x
+    
+dg = Derivada(g)
+
+print(dg.evaldf(2))
